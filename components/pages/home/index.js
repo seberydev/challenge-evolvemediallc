@@ -4,20 +4,20 @@ import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
 const slideFromTopAnim = {
-  initial: { opacity: 0, y: -800 },
+  initial: { opacity: 0, y: -10000 },
   animate: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.6 },
+  transition: { duration: 0.65 },
 };
 
 const slideFromBottomAnim = {
-  initial: { opacity: 0, y: 800 },
+  initial: { opacity: 0, y: 10000 },
   animate: {
     opacity: 1,
     y: 0,
   },
   viewport: { once: true },
-  transition: { duration: 0.6, delay: 0.6 },
+  transition: { duration: 0.65, delay: 0.9 },
 };
 
 const bounceAnim = {
